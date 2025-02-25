@@ -34,4 +34,15 @@ document.querySelector('.hamburger').addEventListener('click', function () {
   //   });
   // });
   
+  const button = document.querySelector('.cta-button');
+
+  button.addEventListener('click', ()=>{
+    const pdfUrls = [
+      'C:/Users/yasmi/Desktop/TP_website/Grace & Green Product Catalogue - incl Reusables (2).pdf',  
+      'C:/Users/yasmi/Desktop/TP_websitePeriod Dignity Programme_2025 (3) (1) (2).pdf'
+    ];
   
+    pdfUrls.forEach(url => {
+      window.open(url, '_blank'); 
+    });
+  });
